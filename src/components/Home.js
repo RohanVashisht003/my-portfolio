@@ -29,7 +29,7 @@ function Home() {
             <strong className="main-name"> ROHAN SHARMA</strong>
           </h1>
 
-          <div style={{ padding: 20, textAlign: "left" }}>
+          <div className='typewriter-div'>
                 <Typewriter options={{strings:['Software Developer',
                 'MERN Stack Developer'],
                 autoStart:true,

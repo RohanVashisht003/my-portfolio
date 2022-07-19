@@ -11,195 +11,171 @@ import gearsImg from '../static/images/gears.png';
 import Particle from './Particle';
 
 function About() {
-  return (
-    <div className='about-main-container'>
-      <Container fluid className='about-section'>
-      
-       <Container className='about-content'>
-        <Row style={{padding: "10px", textAlign:'center',
-      alignItems:'center'}}>
-        <Col
-            md={7}
-            style={{
-              justifyContent: "center",
-              paddingTop: "140px",
-              paddingBottom: "50px",
-            }}
-          >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "10px" }}>
-              About <strong style={{color:'#ed721b'}}>MYSELF</strong>
-              <img src={myselfImg} style={{height:'3em',width:'3em'}}/>
+ return (
+  <div className='about-main-container'>
+    <Container fluid className='about-section'>
+      <Container className='about-content'>
+        <Row className='row-1'>
+          <Col md={7} className='subCol-1'>
+            <h1 className='heading-h1'>About <strong className='color-text'>MYSELF</strong>
+              <img src={myselfImg}/>
             </h1>
-            <Card className="quote-card-view">
-              <Card.Body>
-          <div style={{fontSize:'1.3rem'}}>
-                <p style={{textAlign:'justify'}}>
-              Hi Everyone,
-              myself Rohan Sharma from Delhi, India.
-              <br/>
-              <br/>
-              I completed my <span>Bachelor of Technology</span> in <strong>Computer Science & Engineering </strong>form Dronacharya College Of Engineering, Greater Noida.
-              <br/>
-              <strong>Other than coding, i enjoy</strong>
-              </p>
-            <ul>
-              <li className="about-activity">
-              <BiCycling className='hobby-icon'/>
-               Cycling
-              </li>
-              <li className="about-activity">
-                <SiYourtraveldottv className='hobby-icon'/>
-                Travelling
-              </li>
-              <li className="about-activity">
-                <GiTennisRacket className='hobby-icon'/>
-                Badminton
-              </li>
-            </ul>
-          </div>
+              <Card className="quote-card-view">
+                <Card.Body>
+                  <div style={{}}>
+                    <p>
+                      Hi Everyone,
+                      myself Rohan Sharma from Delhi, India.
+                      <br/>
+                      <br/>
+                      I completed my <span>Bachelor of Technology</span> in <strong>Computer Science & Engineering </strong>form Dronacharya College Of Engineering, Greater Noida.
+                      <br/>
+                      <strong>Other than coding, i enjoy</strong>
+                    </p>
+                    <ul>
+                      <li className="about-activity">
+                        <BiCycling className='hobby-icon'/>
+                        Cycling
+                      </li>
+                      <li className="about-activity">
+                        <SiYourtraveldottv className='hobby-icon'/>
+                        Travelling
+                      </li>
+                      <li className="about-activity">
+                        <GiTennisRacket className='hobby-icon'/>
+                        Badminton
+                      </li>
+                    </ul>
+                  </div>
               
-              </Card.Body>
-            </Card>
+                </Card.Body>
+              </Card>
             
-            </Col>
-            <Col>
-            <img
-          src={aboutImg}
-          alt="Home pic"
-          className='img-fluid'
-          style={{maxHeight:'800px',borderRadius:20}}></img>
-            </Col>
+          </Col>
+
+          {/* sub column 2 */}
+          <Col className='subCol-2'>
+            <img src={aboutImg} alt="about page pic" className='img-fluid'></img>
+          </Col>
          
         </Row>
-       </Container>
-       <Container className='skills-container'>
-       <h1 style={{paddingBottom:40,fontSize: '2.1em'}}>PROFESSIONAL <span>SKILLS</span>
-       <img src={dartImg} style={{height:'2em',width:'2em', marginLeft:10}}/>
-       </h1>
+      </Container>
+
+      {/* container 2 */}
+      <Container className='skills-container'>
+        <h1 className='heading-h1'>PROFESSIONAL <span>SKILLS</span>
+          <img src={dartImg} />
+        </h1>
         <Row>
-         <Col className='skills'>
+          <Col className='skills'>
           <ul className='list-container'>
-           <li className='cards skill1'>
-            {/* html */}
-            <div className='skill-div'>
-            <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" className='skill-actual-icon'/>
-           <p>
-            HTML
-           </p>
-            </div>
-           
-           </li>
+               {/* html */}
+               <li className='cards skill1'>
+                <div className='skill-div'>
+                  <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" className='skill-actual-icon'/>
+                  <p>
+                    HTML
+                  </p>
+                </div>
+               </li>
 
-{/* css */}
-           <li className='cards skill2'>
-            <div className='skill-div'>
-            <img src="https://img.icons8.com/color/480/000000/css3.png" className='skill-actual-icon'/>
-            <p>
-              CSS
-            </p>
-            </div>
-           
-           </li>
+                {/* css */}
+              <li className='cards skill2'>
+                <div className='skill-div'>
+                  <img src="https://img.icons8.com/color/480/000000/css3.png" className='skill-actual-icon'/>
+                  <p>
+                    CSS
+                  </p>
+                </div>
+              </li>
 
-           <li className='cards skill3'>
-            <div className='skill-div'>
-            <img src="https://img.icons8.com/color/480/000000/javascript--v1.png" className='skill-actual-icon'/>
-            <p>
-              JAVASCRIPT
-            </p>
-            </div>
-           
-           </li>
+              <li className='cards skill3'>
+                  <div className='skill-div'>
+                    <img src="https://img.icons8.com/color/480/000000/javascript--v1.png" className='skill-actual-icon'/>
+                    <p>
+                      JAVASCRIPT
+                    </p>
+                  </div>
+              </li>
 
-           <li className='cards skill4'>
-            <div className='skill-div'>
-            <img src="https://img.icons8.com/color/480/000000/nodejs.png" className='skill-actual-icon'/>
-            <p>
-              NODE JS
-            </p>
-            </div>
-           
-           
-           </li>
+              <li className='cards skill4'>
+                  <div className='skill-div'>
+                      <img src="https://img.icons8.com/color/480/000000/nodejs.png" className='skill-actual-icon'/>
+                        <p>
+                          NODE JS
+                        </p>
+                    </div>
+              </li>
 
-           <li className='cards skill5'>
-            <div className='skill-div'>
-            <img src="https://img.icons8.com/color/480/000000/mongodb.png" className='skill-actual-icon'/>
-            <p>
-              MONGO DB
-            </p>
-            </div>
-           
-          
-           </li>
+              <li className='cards skill5'>
+                <div className='skill-div'>
+                  <img src="https://img.icons8.com/color/480/000000/mongodb.png" className='skill-actual-icon'/>
+                  <p>
+                    MONGO DB
+                  </p>
+                </div>
+              </li>
 
-           <li className='cards skill6'>
-            <div className='skill-div'>
-            <img src="https://img.icons8.com/color/480/000000/mysql-logo.png" className='skill-actual-icon'/>
-            <p>
-              MY SQL
-            </p>
-            </div>
-           
-           
-           </li>
+              <li className='cards skill6'>
+                <div className='skill-div'>
+                  <img src="https://img.icons8.com/color/480/000000/mysql-logo.png" className='skill-actual-icon'/>
+                  <p>
+                    MY SQL
+                  </p>
+                </div>
+              </li>
 
-           <li className='cards skill7'>
-            <div className='skill-div'>
-            <img src="https://img.icons8.com/color/480/000000/react-native.png" className='skill-actual-icon'/>
-            <p>
-              REACT JS
-            </p>
+              <li className='cards skill7'>
+                <div className='skill-div'>
+                  <img src="https://img.icons8.com/color/480/000000/react-native.png" className='skill-actual-icon'/>
+                  <p>
+                    REACT JS
+                  </p>
+                </div>
+              </li>
 
-            </div>
-           
-           
-           </li>
+              <li className='cards skill8'>
+                <div className='skill-div'>
+                  <img src='https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png' className='skill-actual-icon' style={{borderRadius: '50%'}}/>
+                  <p>
+                    EXPRESS JS
+                  </p>
+                </div>
+              </li>
 
-           <li className='cards skill8'>
-            <div className='skill-div'>
-            <img src='https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png' className='skill-actual-icon' style={{borderRadius: '50%'}}/>
-            <p>
-              EXPRESS JS
-            </p>
-            </div>
-            
-         
-           </li>
+              <li className='cards skill9'>
+                <div className='skill-div'>
+                <img src="https://img.icons8.com/color/480/000000/firebase.png" className='skill-actual-icon'/>
+                <p>
+                  FIREBASE
+                </p>
+                </div>
+              </li>
 
-           <li className='cards skill9'>
-            <div className='skill-div'>
-            <img src="https://img.icons8.com/color/480/000000/firebase.png" className='skill-actual-icon'/>
-            <p>
-              FIREBASE
-            </p>
-            </div>
-           </li>
-
-           <li className='cards skill9'>
-            <div className='skill-div'>
-            <img src="https://img.icons8.com/ios-glyphs/480/000000/github.png"className='skill-actual-icon'/>
-            <p>
-              GITHUB
-            </p>
-            </div>
-           </li>
+              <li className='cards skill10'>
+                <div className='skill-div'>
+                <img src="https://img.icons8.com/ios-glyphs/480/000000/github.png"className='skill-actual-icon'/>
+                <p>
+                  GITHUB
+                </p>
+                </div>
+              </li>
 
 
-           <li className='cards skill9'>
-            <div className='skill-div'>
-            <img src="https://img.icons8.com/color/480/000000/java-coffee-cup-logo--v1.png" className='skill-actual-icon'/>
-            <p>
-              JAVA
-            </p>
-            </div>
-           </li>
+              <li className='cards skill11'>
+                <div className='skill-div'>
+                <img src="https://img.icons8.com/color/480/000000/java-coffee-cup-logo--v1.png" className='skill-actual-icon'/>
+                <p>
+                  JAVA
+                </p>
+                </div>
+              </li>
           </ul>
          </Col>
         </Row>
        </Container>
        <Container className='skills-container'>
-       <h1 style={{paddingBottom:40,fontSize: '2.1em'}}>TOOLS I USE <img src={gearsImg} style={{height:'2em',width:'2em'}}/></h1>
+       <h1 className='heading-h1'>TOOLS I USE <img src={gearsImg}/></h1>
        <Row>
         <Col className='skills'>
         <ul className='list-container'>

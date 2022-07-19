@@ -77,7 +77,12 @@
   .main-name {
     color: #ed721b;
   }
-  
+  .typewriter-div{
+    padding: 20px;
+    text-align:left;
+    margin-left: 27px;
+  }
+
   .Typewriter__wrapper {
     font-size: 2.2em !important;
     color: #ed721b !important;

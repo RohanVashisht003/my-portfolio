@@ -44,29 +44,29 @@ function Header() {
        <Nav className='ms-auto'>
         <Nav.Item>
           <Nav.Link as={Link} to='/' onClick={() => setExpand(false)}>
-           <AiOutlineHome style={{ marginBottom: "2px",color:'black'}} /><span style={{color:'black'}}>Home</span>
+           <AiOutlineHome className='headerIcon'/><span >Home</span>
           </Nav.Link>
         </Nav.Item>
 
         <Nav.Item>
           <Nav.Link as={Link} to='/about' onClick={() => setExpand(false)}>
-           <AiOutlineUser style={{ marginBottom: "2px",color:'black' }} />
-           <span style={{color:'black'}}>About Me</span>
+           <AiOutlineUser className='headerIcon' />
+           <span >About Me</span>
            
           </Nav.Link>
         </Nav.Item>
 
         <Nav.Item>
           <Nav.Link as={Link} to='/project' onClick={() => setExpand(false)}>
-          <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" ,color:'black'}}/>
-          <span style={{color:'black'}}>Projects</span>
+          <AiOutlineFundProjectionScreen className='headerIcon'/>
+          <span >Projects</span>
           </Nav.Link>
         </Nav.Item>
 
         <Nav.Item>
           <Nav.Link as={Link} to='/resume' onClick={() => setExpand(false)}>
-          <AiFillContainer style={{ marginBottom: "2px" ,color:'black'}} />
-          <span style={{color:'black'}}>Resume</span>
+          <AiFillContainer className='headerIcon' />
+          <span>Resume</span>
           </Nav.Link>
         </Nav.Item>
        </Nav>
