@@ -14,7 +14,9 @@ function Project() {
         <Col style={{justifyContent: "center",
               paddingTop: "50px",
               paddingBottom: "50px"}}>
-         <h1>PROJECTS</h1>
+         <h1>PROJECTS
+          <img src='https://cdn3d.iconscout.com/3d/premium/thumb/typing-on-laptop-hand-gesture-5138551-4291089.png'style={{height:'3em',width:'3em'}}></img>
+         </h1>
          <p>Here are a few projects I have worked on</p>
           <ul className='project-card-container'>
 

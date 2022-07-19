@@ -8,7 +8,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 const resumeLink = 'https://raw.githubusercontent.com/RohanVashisht003/MySelf/main/src/static/documents/Rohan.pdf';
 
 function Resume() {
-    const [width, setWidth] = useState(1200);
+  const [width, setWidth] = useState(1000);
+
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -35,11 +36,10 @@ function Resume() {
             &nbsp;Download CV
           </Button> 
         </Col>
-            
             </Row>
             <Row className="resume">
           <Document file={resumeLink} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            <Page pageNumber={1} />
           </Document>
         </Row>
 
