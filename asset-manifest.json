@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a547c485.css",
+    "main.js": "/static/js/main.89a0072b.js",
+    "static/media/home-bg.jpg": "/static/media/home-bg.d42e0a6a48e2634eb5c7.jpg",
+    "static/media/homeimg.png": "/static/media/homeimg.face9109be60eb0b7a0e.png",
+    "static/media/myself-img.png": "/static/media/myself-img.1a8b4e8ae72f218cd53a.png",
+    "static/media/aboutimg.jpg": "/static/media/aboutimg.a130d95069029b3a099a.jpg",
+    "static/media/gears.png": "/static/media/gears.904de6b69852a50ac7eb.png",
+    "static/media/dart.png": "/static/media/dart.43277d4f579b54482844.png",
+    "static/media/Rohan.pdf": "/static/media/Rohan.6bf994bd85e5c3eb44e4.pdf",
+    "static/media/avatar.svg": "/static/media/avatar.6c6a1f269b08d8d9ad9414f05dc6b2a5.svg",
+    "static/media/express.png": "/static/media/express.b44f5a4b0ab040328aac.png",
+    "static/media/pre.svg": "/static/media/pre.0d9a276b0bdd64f6f3de.svg",
+    "index.html": "/index.html",
+    "main.a547c485.css.map": "/static/css/main.a547c485.css.map",
+    "main.89a0072b.js.map": "/static/js/main.89a0072b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a547c485.css",
+    "static/js/main.89a0072b.js"
+  ]
+}
