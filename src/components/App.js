@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import '../css/App.css';
 import Header from './Header.js';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,13 +10,14 @@ import Footer from './Footer';
 import Project from './Project';
 import Resume from './Resume';
 
+
 function App() {
   const[load,setLoad] = useState(true);
 
   useEffect(()=>{
     const timer = setTimeout(()=>{
       setLoad(false);
-    },1200)
+    },1300)
 
     return ()=>clearTimeout(timer);
   },[]);
@@ -31,6 +32,8 @@ function App() {
           <Route path='/about' element={<About />}/>
           <Route path='/project' element={<Project />}/>
           <Route path='/resume' element={<Resume />}/>
+          <Route path='*' element={<Navigate replace to='/'/>}>
+          </Route>
         </Routes>
         <Footer/>
     </div>

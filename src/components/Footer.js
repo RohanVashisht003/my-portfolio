@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import '../css/Footer.css';
+// import '../css/Footer.css';
 
 
 function Footer() {

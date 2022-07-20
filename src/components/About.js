@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/About.css';
+// import '../css/About.css';
 import { Container, Row, Col, Card} from "react-bootstrap";
 import aboutImg from '../static/images/aboutimg.jpg';
 import {BiCycling} from 'react-icons/bi';
@@ -8,7 +8,7 @@ import {GiTennisRacket} from 'react-icons/gi';
 import myselfImg from '../static/images/myself-img.png';
 import dartImg from '../static/images/dart.png';
 import gearsImg from '../static/images/gears.png';
-import Particle from './Particle';
+
 
 function About() {
  return (
@@ -18,11 +18,11 @@ function About() {
         <Row className='row-1'>
           <Col md={7} className='subCol-1'>
             <h1 className='heading-h1'>About <strong className='color-text'>MYSELF</strong>
-              <img src={myselfImg}/>
+              <img src={myselfImg} alt='myself cover image'/>
             </h1>
               <Card className="quote-card-view">
                 <Card.Body>
-                  <div style={{}}>
+                  <div>
                     <p>
                       Hi Everyone,
                       myself Rohan Sharma from Delhi, India.
@@ -64,7 +64,7 @@ function About() {
       {/* container 2 */}
       <Container className='skills-container'>
         <h1 className='heading-h1'>PROFESSIONAL <span>SKILLS</span>
-          <img src={dartImg} />
+          <img src={dartImg} alt='dart image'/>
         </h1>
         <Row>
           <Col className='skills'>
@@ -72,7 +72,7 @@ function About() {
                {/* html */}
                <li className='cards skill1'>
                 <div className='skill-div'>
-                  <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" className='skill-actual-icon'/>
+                  <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" className='skill-actual-icon' alt='html image'/>
                   <p>
                     HTML
                   </p>
@@ -82,7 +82,7 @@ function About() {
                 {/* css */}
               <li className='cards skill2'>
                 <div className='skill-div'>
-                  <img src="https://img.icons8.com/color/480/000000/css3.png" className='skill-actual-icon'/>
+                  <img src="https://img.icons8.com/color/480/000000/css3.png" className='skill-actual-icon' alt='css image'/>
                   <p>
                     CSS
                   </p>
@@ -91,7 +91,7 @@ function About() {
 
               <li className='cards skill3'>
                   <div className='skill-div'>
-                    <img src="https://img.icons8.com/color/480/000000/javascript--v1.png" className='skill-actual-icon'/>
+                    <img src="https://img.icons8.com/color/480/000000/javascript--v1.png" className='skill-actual-icon' alt='javascript image'/>
                     <p>
                       JAVASCRIPT
                     </p>
@@ -100,7 +100,7 @@ function About() {
 
               <li className='cards skill4'>
                   <div className='skill-div'>
-                      <img src="https://img.icons8.com/color/480/000000/nodejs.png" className='skill-actual-icon'/>
+                      <img src="https://img.icons8.com/color/480/000000/nodejs.png" className='skill-actual-icon' alt='nodejs image'/>
                         <p>
                           NODE JS
                         </p>
@@ -109,7 +109,7 @@ function About() {
 
               <li className='cards skill5'>
                 <div className='skill-div'>
-                  <img src="https://img.icons8.com/color/480/000000/mongodb.png" className='skill-actual-icon'/>
+                  <img src="https://img.icons8.com/color/480/000000/mongodb.png" className='skill-actual-icon'alt='mongo db image'/>
                   <p>
                     MONGO DB
                   </p>
@@ -118,7 +118,7 @@ function About() {
 
               <li className='cards skill6'>
                 <div className='skill-div'>
-                  <img src="https://img.icons8.com/color/480/000000/mysql-logo.png" className='skill-actual-icon'/>
+                  <img src="https://img.icons8.com/color/480/000000/mysql-logo.png" className='skill-actual-icon' alt='sql image'/>
                   <p>
                     MY SQL
                   </p>
@@ -127,7 +127,7 @@ function About() {
 
               <li className='cards skill7'>
                 <div className='skill-div'>
-                  <img src="https://img.icons8.com/color/480/000000/react-native.png" className='skill-actual-icon'/>
+                  <img src="https://img.icons8.com/color/480/000000/react-native.png" className='skill-actual-icon' alt='react image'/>
                   <p>
                     REACT JS
                   </p>
@@ -136,7 +136,7 @@ function About() {
 
               <li className='cards skill8'>
                 <div className='skill-div'>
-                  <img src='https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png' className='skill-actual-icon' style={{borderRadius: '50%'}}/>
+                  <img src='https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png' className='skill-actual-icon' style={{borderRadius: '50%'}} alt='express image'/>
                   <p>
                     EXPRESS JS
                   </p>
@@ -145,7 +145,7 @@ function About() {
 
               <li className='cards skill9'>
                 <div className='skill-div'>
-                <img src="https://img.icons8.com/color/480/000000/firebase.png" className='skill-actual-icon'/>
+                <img src="https://img.icons8.com/color/480/000000/firebase.png" className='skill-actual-icon' alt='firebase image'/>
                 <p>
                   FIREBASE
                 </p>
@@ -154,7 +154,7 @@ function About() {
 
               <li className='cards skill10'>
                 <div className='skill-div'>
-                <img src="https://img.icons8.com/ios-glyphs/480/000000/github.png"className='skill-actual-icon'/>
+                <img src="https://img.icons8.com/ios-glyphs/480/000000/github.png"className='skill-actual-icon' alt='github image'/>
                 <p>
                   GITHUB
                 </p>
@@ -164,7 +164,7 @@ function About() {
 
               <li className='cards skill11'>
                 <div className='skill-div'>
-                <img src="https://img.icons8.com/color/480/000000/java-coffee-cup-logo--v1.png" className='skill-actual-icon'/>
+                <img src="https://img.icons8.com/color/480/000000/java-coffee-cup-logo--v1.png" className='skill-actual-icon' alt='java image'/>
                 <p>
                   JAVA
                 </p>
@@ -181,7 +181,7 @@ function About() {
         <ul className='list-container'>
           <li className='cards'>
             <div className='skill-div'>
-            <img src="https://img.icons8.com/color/480/000000/visual-studio--v1.png" className='skill-actual-icon'/>
+            <img src="https://img.icons8.com/color/480/000000/visual-studio--v1.png" className='skill-actual-icon' alt='vscode image'/>
             <p>
             VS Code
             </p>
@@ -190,7 +190,7 @@ function About() {
 
           <li className='cards'>
             <div className='skill-div'>
-            <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/000000/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" className='skill-actual-icon'/>
+            <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/000000/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" className='skill-actual-icon' alt='postman image'/>
             <p>
             Postman
             </p>
@@ -199,7 +199,7 @@ function About() {
 
           <li className='cards'>
             <div className='skill-div'>
-            <img src="https://img.icons8.com/color/480/000000/heroku.png" className='skill-actual-icon'/>
+            <img src="https://img.icons8.com/color/480/000000/heroku.png" className='skill-actual-icon' alt='heroku image'/>
             <p>
             Heroku
             </p>
@@ -208,7 +208,7 @@ function About() {
 
           <li className='cards'>
             <div className='skill-div'>
-            <img src="https://user-images.githubusercontent.com/11943860/46922529-b28cdc80-cfe0-11e8-9aec-0091161d3599.png" className='skill-actual-icon'/>
+            <img src="https://user-images.githubusercontent.com/11943860/46922529-b28cdc80-cfe0-11e8-9aec-0091161d3599.png" className='skill-actual-icon' alt='eclipse image'/>
             <p>
             Eclipse
             </p>
@@ -217,7 +217,7 @@ function About() {
 
           <li className='cards'>
             <div className='skill-div'>
-            <img src="https://img.icons8.com/color/480/000000/git.png" className='skill-actual-icon'/>
+            <img src="https://img.icons8.com/color/480/000000/git.png" className='skill-actual-icon' alt='git image'/>
             <p>
             GIT
             </p>
@@ -226,7 +226,7 @@ function About() {
 
           <li className='cards'>
             <div className='skill-div'>
-            <img src="https://img.icons8.com/color/480/000000/npm.png" className='skill-actual-icon'/>
+            <img src="https://img.icons8.com/color/480/000000/npm.png" className='skill-actual-icon' alt='npm image'/>
             <p>
             NPM
             </p>

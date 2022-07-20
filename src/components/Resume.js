@@ -2,18 +2,18 @@ import React, { useEffect, useState } from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import { AiOutlineDownload } from 'react-icons/ai';
 import { Document, Page, pdfjs } from 'react-pdf';
-import '../css/Resume.css';
+// import '../css/Resume.css';
 import pdf from '../static/documents/Rohan.pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 const resumeLink = 'https://raw.githubusercontent.com/RohanVashisht003/MySelf/main/src/static/documents/Rohan.pdf';
 
 function Resume() {
-  const [width, setWidth] = useState(1000);
+  const [width, setWidth] = useState(1100);
 
 
   useEffect(() => {
     setWidth(window.innerWidth);
-  }, []);
+  },[]);
 
   return (
     <div className='resume-main-container'>
@@ -24,13 +24,12 @@ function Resume() {
         <Col  md={7}
             style={{
               justifyContent: "center",
-              paddingTop: "140px",
-              paddingBottom: "50px"}}>
+              paddingTop: "50px",
+              paddingBottom: "30px"}}>
         <Button
-            variant="primary"
+            variant="warning"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
@@ -39,7 +38,7 @@ function Resume() {
             </Row>
             <Row className="resume">
           <Document file={resumeLink} className="d-flex justify-content-center">
-            <Page pageNumber={1} />
+            <Page pageNumber={1} scale={width > 786 ? 1.2 : 0.5} />
           </Document>
         </Row>
 
@@ -48,10 +47,10 @@ function Resume() {
         <Col  md={7}
             style={{
               justifyContent: "center",
-              paddingTop: "140px",
+              paddingTop: "10px",
               paddingBottom: "50px"}}>
         <Button
-            variant="primary"
+            variant="warning"
             href={pdf}
             target="_blank"
             style={{ maxWidth: "250px" }}

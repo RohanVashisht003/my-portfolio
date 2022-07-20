@@ -1,19 +1,18 @@
 import React from 'react';
-import '../css/Home.css';
+// import '../css/Home.css';
 import homeImg from '../static/images/homeimg.png';
 import myImg from '../static/images/avatar.svg'
 import { Container,Row,Col } from 'react-bootstrap';
 import Tilt from 'react-parallax-tilt';
 import Typewriter from "typewriter-effect";
 
-import Particle from './Particle';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 function Home() {
   return (
     <div className='home-main-container'>
      <Container fluid className="home-section" id="home">
-        
+   
       <Container className='home-content'>
        <Row>
         <Col md={7} className='home-header'>
@@ -70,6 +69,18 @@ function Home() {
           </li>
 
           <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/rohan-sharma-937283167"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                 <AiFillLinkedin />
+                </a>
+         </li>
+
+         
+         <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/rohan-sharma-937283167"
                   target="_blank"

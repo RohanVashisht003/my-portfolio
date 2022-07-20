@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import '../css/Project.css';
 import htmlImg from '../static/images/html.png';
 import cssImg from '../static/images/css.png';
 import jsImg from '../static/images/javascript.png';
@@ -8,18 +7,20 @@ import mongoImg from '../static/images/mongodb.png';
 import expressImg from '../static/images/express.png';
 import nodeImg from '../static/images/nodejs.png';
 import reactImg from '../static/images/react.png';
-import Particle from './Particle';
+
+
 
 
 function Project() {
   return (
     <div className='main-project-container'>
       <Container fluid className='project-section'>
+     
         <Container className='project-content'>
           <Row className='row-1'>
             <Col className='projectsubCol-1'>
               <h1>PROJECTS
-                <img src='https://cdn3d.iconscout.com/3d/premium/thumb/typing-on-laptop-hand-gesture-5138551-4291089.png'></img>
+                <img src='https://cdn3d.iconscout.com/3d/premium/thumb/typing-on-laptop-hand-gesture-5138551-4291089.png' alt='laptop  image'></img>
               </h1>
               <p>Here are a few projects I have worked on</p>
               <ul className='project-card-container'>
@@ -34,42 +35,42 @@ function Project() {
                       <p><strong>TechStack:-</strong>
                       {/* html */}
                       <div className='techstack-div'>
-                      <img src={htmlImg} className='techstack-icon'/>
+                      <img src={htmlImg} className='techstack-icon' alt='html image'/>
                       <p>
                           HTML
                       </p>
                       </div>
                       {/* css */}
                       <div className='techstack-div'>
-                      <img src={cssImg} className='techstack-icon'/>
+                      <img src={cssImg} className='techstack-icon' alt='css image'/>
                       <p>
                         CSS
                       </p>
                       </div>
                       {/* js */}
                       <div className='techstack-div'>
-                      <img src={jsImg}className='techstack-icon'/>
+                      <img src={jsImg}className='techstack-icon'alt='javascript image'/>
                       <p>
                         JAVASCRIPT
                       </p>
                       </div>
                       {/* node js */}
                       <div className='techstack-div'>
-                        <img src={nodeImg}  className='techstack-icon'/>
+                        <img src={nodeImg}  className='techstack-icon'alt='nodejs image'/>
                         <p>
                         NODE JS
                         </p>
                       </div>
                       {/* mongo db */}
                       <div className='techstack-div'>
-                      <img src={mongoImg}  className='techstack-icon'/>
+                      <img src={mongoImg}  className='techstack-icon'alt='mongodb image'/>
                       <p>
                       MONGO DB
                       </p>
                       </div>
                       {/* express js */}
                       <div className='techstack-div'>
-                      <img src={expressImg}className='techstack-icon' style={{borderRadius: '50%'}}/>
+                      <img src={expressImg}className='techstack-icon' style={{borderRadius: '50%'}}alt='express image'/>
                       <p>
                       EXPRESS JS
                       </p>
@@ -92,21 +93,21 @@ function Project() {
                         <p><strong>TechStack:-</strong>
                         {/* html */}
                         <div className='techstack-div'>
-                        <img src={htmlImg} className='techstack-icon'/>
+                        <img src={htmlImg} className='techstack-icon' alt='html image'/>
                         <p>
                             HTML
                         </p>
                         </div>
                         {/* css */}
                         <div className='techstack-div'>
-                        <img src={cssImg} className='techstack-icon'/>
+                        <img src={cssImg} className='techstack-icon'alt='css image'/>
                         <p >
                           CSS
                         </p>
                         </div>
                         {/* js */}
                         <div className='techstack-div'>
-                        <img src={jsImg}className='techstack-icon'/>
+                        <img src={jsImg}className='techstack-icon'alt='javascript image'/>
                         <p>
                           JAVASCRIPT
                         </p>
@@ -114,7 +115,7 @@ function Project() {
 
                         {/*react js  */}
                         <div className='techstack-div'>
-                        <img src={reactImg}className='techstack-icon'/>
+                        <img src={reactImg}className='techstack-icon'alt='html image'/>
                         <p>
                           REACT JS
                         </p>
@@ -335,7 +336,7 @@ function Project() {
        </Row>
        <Row className = 'row-2'>
        <Col className='btn-col'>
-                <Button className='more-btn' target='_blank' href='https://github.com/RohanVashisht003'>More Projects</Button>
+                <Button variant='warning' className='more-btn' target='_blank' href='https://github.com/RohanVashisht003'>More Projects</Button>
         </Col>
        </Row>
       </Container>
