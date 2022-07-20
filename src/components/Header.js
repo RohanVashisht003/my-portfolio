@@ -28,7 +28,7 @@ function Header() {
    <div className='main-navbar-container'>
     <Navbar className={nav ? "sticky" : "navbar"}  expand="md" fixed='top' expanded={expand}>
       <Container>
-      <Navbar.Brand href="/" className="d-flex logo-brand">
+      <Navbar.Brand className="d-flex logo-brand">
           <span >&lt;</span>RS<span>&nbsp;/&gt;</span>
       </Navbar.Brand>
 

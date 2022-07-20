@@ -6,7 +6,7 @@ import { Container,Row,Col } from 'react-bootstrap';
 import Tilt from 'react-parallax-tilt';
 import Typewriter from "typewriter-effect";
 
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
 function Home() {
   return (
@@ -64,7 +64,7 @@ function Home() {
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillGithub />
+                  <img src='https://img.icons8.com/ios-glyphs/60/000000/github.png'></img>
                 </a>
           </li>
 
@@ -75,19 +75,19 @@ function Home() {
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                 <AiFillLinkedin />
+                <img src='https://img.icons8.com/fluency/48/000000/linkedin-circled.png'/>
                 </a>
          </li>
 
          
          <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/rohan-sharma-937283167"
+                  href="mailto:rnmm003@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                 <AiFillLinkedin />
+                 <img src="https://img.icons8.com/arcade/64/000000/experimental-new-post-arcade.png"/>
                 </a>
          </li>
         </ul>

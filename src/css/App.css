@@ -306,12 +306,9 @@
 
 .home-social-icons {
   position: relative !important;
-  display: inline-block !important;
+  display: flex !important;
   width: 40px !important;
   height: 40px !important;
-  text-align: center !important;
-  font-size: 2.1em !important;
-  line-height: 0.9em !important;
   background: rgba(255, 255, 255, 0.972) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
@@ -349,7 +346,7 @@
 }
 
 .icon-colour {
-  color: #068bff !important;
+  color: #b96a09 !important;
 }
 
 /* about */
