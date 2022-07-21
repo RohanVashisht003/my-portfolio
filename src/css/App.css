@@ -1,3 +1,4 @@
+
 #no-scroll {
   overflow: hidden;
   height: 100vh;
@@ -472,7 +473,7 @@
 }
 @media (max-width: 458px) {
   .about-section {
-    font-size: 11px;
+    font-size: 12px;
   }
   .about-section div {
     font-size: 12px !important;

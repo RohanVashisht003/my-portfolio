@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-// import '../css/Header.css';
-import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
+
 import {AiFillContainer,AiOutlineHome,AiOutlineFundProjectionScreen,AiOutlineUser} from "react-icons/ai";
 import { Link } from "react-router-dom";
 
@@ -28,7 +26,7 @@ function Header() {
    <div className='main-navbar-container'>
     <Navbar className={nav ? "sticky" : "navbar"}  expand="md" fixed='top' expanded={expand}>
       <Container>
-      <Navbar.Brand className="d-flex logo-brand">
+      <Navbar.Brand href='/my-portfolio' className="d-flex logo-brand">
           <span >&lt;</span>RS<span>&nbsp;/&gt;</span>
       </Navbar.Brand>
 

@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import { AiOutlineDownload } from 'react-icons/ai';
 import { Document, Page, pdfjs } from 'react-pdf';
-// import '../css/Resume.css';
-import pdf from '../static/documents/Rohan.pdf';
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 const resumeLink = 'https://raw.githubusercontent.com/RohanVashisht003/my-portfolio/main/src/static/documents/Rohan.pdf';
 
@@ -29,7 +28,7 @@ function Resume() {
               paddingBottom: "30px"}}>
         <Button
             variant="warning"
-            href={pdf}
+            href={resumeLink}
             target="_blank"
           >
             <AiOutlineDownload />
@@ -52,7 +51,7 @@ function Resume() {
               paddingBottom: "50px"}}>
         <Button
             variant="warning"
-            href={pdf}
+            href={resumeLink}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >

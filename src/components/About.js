@@ -28,7 +28,7 @@ function About() {
                       myself Rohan Sharma from Delhi, India.
                       <br/>
                       <br/>
-                      I completed my <span>Bachelor of Technology</span> in <strong>Computer Science & Engineering </strong>form Dronacharya College Of Engineering, Greater Noida.
+                      I completed my <span>Bachelor of Technology</span> in <strong>Computer Science & Engineering</strong>form Dronacharya College Of Engineering, Greater Noida.
                       <br/>
                       <strong>Other than coding, i enjoy</strong>
                     </p>
@@ -175,7 +175,7 @@ function About() {
         </Row>
        </Container>
        <Container className='skills-container'>
-       <h1 className='heading-h1'>TOOLS I USE <img src={gearsImg}/></h1>
+       <h1 className='heading-h1'>TOOLS <img src={gearsImg}/></h1>
        <Row>
         <Col className='skills'>
         <ul className='list-container'>
