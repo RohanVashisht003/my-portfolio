@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import { AiOutlineDownload } from 'react-icons/ai';
 import { Document, Page, pdfjs } from 'react-pdf';
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 const resumeLink = 'https://raw.githubusercontent.com/RohanVashisht003/my-portfolio/main/src/static/documents/Rohan.pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
 
 
 
