@@ -12,9 +12,9 @@ const Experience = () => {
   return (
     <Element
       name="experience"
-      className="min-h-screen bg-gradient-to-l from-[#21073C] to-[#3A1078] text-gray-300 py-32"
+      className="min-h-screen radial-gradient(80% 50% at 50% -20%, #2563eb1f, #0000), radial-gradient(60% 40% at 80%, #7c3aed0f, #0000); text-gray-300 py-32"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center  h-full text-white">
+      <div className="max-w-screen-lg mx-auto px-8 py-4 flex flex-col justify-center  h-full text-black">
         <h1 className="text-4xl font-bold inline border-b-4 border-[#00FFCA]">
           Experience
         </h1>

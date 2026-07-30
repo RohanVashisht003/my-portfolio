@@ -1,5 +1,6 @@
 import { Element } from "react-scroll";
 import { IoSendSharp } from "react-icons/io5";
+import { FaGithub, FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -35,59 +36,66 @@ const Contact = () => {
   return (
     <Element
       name="contact"
-      className="w-full h-screen bg-gradient-to-l from-[#21073C] to-[#3A1078] text-gray-300 py-32"
+      className="w-full h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50"
     >
-      <div className="flex flex-col justify-center items-center w-full h-full text-white">
-        <p className="text-4xl font-bold inline border-b-4 border-[#00FFCA]">
-          Contact Us
-        </p>
-        <p className="py-6">
-          Submit the form below or send me an email -{" "}
-          <span className="font-bold">rnmm003@gmail.com</span>
-        </p>
+      <div className="flex flex-col justify-center items-center w-full h-full px-8">
+        <div className="max-w-[1000px] w-full grid md:grid-cols-2 gap-8">
+          {/* Left Card - Let's Connect */}
+          <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col justify-center">
+            <div className="flex items-center text-green-600 text-sm font-semibold mb-4">
+              <span className="h-2 w-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+              Available for opportunities
+            </div>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Let's Connect</h2>
+            <p className="text-gray-600 leading-relaxed">
+              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out through any of the channels below.
+            </p>
+          </div>
 
-        <div>
-          <form onSubmit={handleFormSubmit} id="myform" ref={form}>
-            <input
-              type="text"
-              placeholder="Name"
-              name="name"
-              className="bg-gray-100 text-gray-950 p-2 w-full rounded-md active:border-[#00FFCA] active:border-2"
-              data-aos="fade-down"
-              data-aos-duration="600"
-              data-aos-easing="linear"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              name="email"
-              className="my-4 p-2 bg-gray-100 text-gray-950 w-full rounded-md active:border-[#00FFCA] active:border-2"
-              data-aos="fade-down"
-              data-aos-duration="800"
-              data-aos-easing="linear"
-            />
-            <textarea
-              name="message"
-              className="bg-gray-100 p-2 w-full text-gray-950 rounded-md active:border-[#00FFCA] active:border-2"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-              data-aos-easing="linear"
-              placeholder="Message"
-              rows="10"
-            />
-          </form>
-        </div>
-        <div className="mt-4 mx">
-          <button
-            form="myform"
-            type="submit"
-            className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#00FFCA] hover:border-[#00FFCA] rounded-sm hover:text-[#3A1078] font-semibold"
-          >
-            Send Message
-            <span className="group-hover:translate-x-1 duration-300">
-              <IoSendSharp className="ml-4" />
-            </span>
-          </button>
+          {/* Right Card - Contact Details */}
+          <div className="bg-white rounded-2xl shadow-lg p-8">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+            
+            <div className="space-y-4 mb-8">
+              <div className="flex items-center text-gray-600">
+                <FaEnvelope className="mr-3 text-[#ff9500]" />
+                <span>sharmarohan544@gmail.com</span>
+              </div>
+              <div className="flex items-center text-gray-600">
+                <FaPhone className="mr-3 text-[#ff9500]" />
+                <span>+91 9876543210</span>
+              </div>
+              <div className="flex items-center text-gray-600">
+                <FaMapMarkerAlt className="mr-3 text-[#ff9500]" />
+                <span>India</span>
+              </div>
+            </div>
+
+            <div className="flex space-x-4">
+              <a
+                href="https://github.com/RohanVashisht003"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#ff9500] hover:text-white transition-all duration-300 text-gray-700"
+              >
+                <FaGithub size={20} />
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#ff9500] hover:text-white transition-all duration-300 text-gray-700"
+              >
+                <FaLinkedin size={20} />
+              </a>
+              <a
+                href="mailto:sharmarohan544@gmail.com"
+                className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#ff9500] hover:text-white transition-all duration-300 text-gray-700"
+              >
+                <FaEnvelope size={20} />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <ToastContainer />

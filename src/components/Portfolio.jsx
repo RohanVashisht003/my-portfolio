@@ -6,15 +6,15 @@ const Portfolio = () => {
   return (
     <Element
       name="portfolio"
-      className="w-full bg-gradient-to-l from-[#21073C] to-[#3A1078] py-32"
+      className="w-full radial-gradient(80% 50% at 50% -20%, #2563eb1f, #0000), radial-gradient(60% 40% at 80%, #7c3aed0f, #0000); py-32"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center h-full text-white">
+      <div className="max-w-screen-lg mx-auto px-8 py-4 flex flex-col justify-center h-full text-white">
         <div>
           <h1 className="text-4xl font-bold inline border-b-4 border-[#00FFCA]">
             Portfolio
           </h1>
         </div>
-        <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 mt-7">
+        <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 mt-7">
           {portfolio.map((work) => (
             <a
               href={work.workUrl}
@@ -53,7 +53,7 @@ const Portfolio = () => {
         </div>
         <div className="flex justify-center mt-10">
           <a
-            className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#00FFCA]"
+            className="text-black group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#00FFCA]"
             href="https://github.com/RohanVashisht003?tab=repositories"
             rel="nofollow"
           >
