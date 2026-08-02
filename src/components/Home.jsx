@@ -10,7 +10,7 @@ const Home = () => {
     >
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full pb-0">
         <p className="text-black-50 text-lg">Hi, my name is</p>
-        <h1 className="text-4xl sm:text-7xl font-bold text-[#7E57C2]">
+        <h1 className="text-4xl sm:text-7xl font-bold text-gradient">
           Rohan Sharma
         </h1>
         <div>

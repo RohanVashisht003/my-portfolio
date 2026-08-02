@@ -18,12 +18,12 @@ const About = () => {
       className="w-full min-h-screen radial-gradient(at 50% -20%, #A589F2, #0000), radial-gradient(at 80%, #A589F2, #0000);"
     >
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full pt-12">
-        <div className="w-full grid grid-cols-2 gap-8">
-          <div className="pb-8">
-            <p className="text-4xl font-bold inline border-b-4 border-[#ff9500]">
+         <div className="pb-8 text-center">
+            <p className="text-4xl font-bold inline  text-gradient">
               About
             </p>
           </div>
+        <div className="w-full grid grid-cols-2 gap-8">
         </div>
         <div className="w-full grid sm:grid-cols-2 gap-8">
           <div
@@ -35,8 +35,8 @@ const About = () => {
             <img
               src={profile}
               alt="rohan"
-              className="rounded-full shadow-2xl outline-offset-8 outline-dashed outline-2"
-              style={{ width: "15rem", height: "15rem" }}
+              className="rounded-full shadow-2xl outline-offset-8  outline-2"
+              style={{ width: "10rem", height: "12rem" }}
             />
           </div>
           {/* text */}

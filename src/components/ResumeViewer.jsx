@@ -10,7 +10,7 @@ const ResumeViewer = () => {
   return (
     <div className="w-full py-12">
       <div className="max-w-4xl mx-auto">
-        <div className="mb-6 flex justify-center">
+        <div className="mb-20 flex justify-center">
           <button
             onClick={handleDownload}
             className="bg-[#7E57C2] text-white px-6 py-3 rounded-full font-semibold flex items-center hover:bg-[#6D46B0] transition-all duration-300"

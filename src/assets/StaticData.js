@@ -93,53 +93,96 @@ export const experience = [
     date: "June 2018 - July 2018",
     company: "IndiaMart InterMesh Pvt. Ltd.",
     position: "Android Developer Trainee",
-    description:
-      "As an intern my task was to learn and understand the working of android os and to develop a new feature for the app",
+    description: [
+      "Learned and understood the working of Android OS",
+      "Developed new features for the Android application"
+    ],
   },
   {
     date: "October 2019 - March 2020",
-    company: "Freelancing",
-    position: "",
-    description:
-      "As a freelancer in my initial days I worked as a Linux trainer then I got the chance to work as a web developer, Worked on different projects as a trainee and gained a good understanding of different technologies like HTML, CSS, Javascript, etc. During this time period, i gained a good understanding of different technologies",
+    company: "Ap2v solutions Freelancing",
+    position: "Trainee",
+    description: [
+      "Worked as a Linux trainer",
+      "Developed web applications as a freelancer",
+      "Gained practical experience with HTML, CSS, and JavaScript",
+      "Worked on various projects as a trainee"
+    ],
   },
   {
     date: "June-2021 - August-2022",
     company: "TechMahindra",
     position: "Associate-Customer Support",
-    description:
-      "My responsibilities were to resolve customer inquiries, escalate the issues to concerned teams, and to ensure customer satisfaction.",
+    description: [
+      "Resolved customer inquiries efficiently",
+      "Escalated issues to concerned teams",
+      "Ensured high customer satisfaction levels"
+    ],
   },
   {
     date: "June-2021 - September-2022",
     company: "Coding Ninjas",
     position: "CareerCamp Web Development Trainee",
-    description:
-      "Gained practical experience in web development by developing various projects. Learned different principles of web-development. Also worked as an assistant with my mentors in solving the doubts of other trainees.",
+    description: [
+      "Gained practical experience in web development through various projects",
+      "Learned fundamental principles of web development",
+      "Assisted mentors in solving doubts of other trainees"
+    ],
   },
   {
     date: "August-2022 - December-2022",
     company: "Coding Ninjas",
     position: "Teaching Assistant",
-    description:
-      "Assisted more than 500 students in their coding journey. Solved doubts related to react.js, node.js, javascript concepts, css properties and setting-up of projects. Solved more than 700 doubts in span of 4 months. Got the title of Ninja TA with 4.7/5 rating. ",
+    description: [
+      "Assisted more than 500 students in their coding journey",
+      "Solved doubts related to React.js, Node.js, JavaScript, CSS, and project setup",
+      "Resolved over 700 doubts in 4 months",
+      "Achieved Ninja TA title with 4.7/5 rating"
+    ],
   },
   {
     date: "October-2022 - Present",
     company: "Anubudh Edtech Pvt. Ltd.",
     position: "Fullstack Developer",
-    description:
-      "As an accomplished Full-stack developer at Anubudh. I have successfully contributed to various projects and technologies. With expertise in Reactjs, Nodejs, etc. I have played a vital role in API development and UI development for various projects using Nodejs, Expressjs, Reactjs, MongoDB, etc., and have received accolades for my exceptional work either on the front end or back end. I have consistently showcased my problem-solving skills and innovative mindset. Moreover, my ability to deliver exceptional results has earned me recognition on the organization's cheerboard.",
+    description: [
+      "Contributed to various projects using React.js, Node.js, Express.js, and MongoDB",
+      "Developed APIs and UI components for multiple applications",
+      "Received accolades for exceptional work on both frontend and backend",
+      "Demonstrated strong problem-solving skills and innovative mindset",
+      "Earned recognition on the organization's cheerboard for delivering exceptional results"
+    ],
+  },
+   {
+    date: "April 2024 - Present",
+    company: "Times Network (BCCL), Noida",
+    position: "Software Developer",
+    description: [
+      "Engineer scalable full-stack solutions using React.js, Next.js, TypeScript, and Node.js",
+      "Power high-traffic production platforms with optimized performance",
+      "Architect reusable UI systems and modular component structures, accelerating feature delivery",
+      "Reduced development effort by 25% through modular architecture",
+      "Optimized Redis caching, reducing memory usage by 40% and API payload size by 77%",
+      "Built backend services supporting high-concurrency environments with improved response times"
+    ],
   },
 ];
 
 export const portfolio = [
   {
+    title: "TimesNow World",
+    imgUrl: sevenHundred,
+    tech: ["Reactjs", "Redux", "Nodejs"],
+    duration: "400",
+    category: "professional",
+    description: "Architected and developed a full-stack, dedicated world news platform designed for a global audience. the application features a high-performance React.js frontend paired with a scalable Node.js backend service. The platform handles real-time news feeds, structured content aggregation, and responsive layouts tailored for fast content delivery."
+  },
+  {
     title: "GMAT Learning Platform",
     imgUrl: sevenHundred,
     tech: ["Reactjs", "Ant-Design", "Redux", "RTK-Query"],
-    workUrl: "https://platform.700plus.club/login",
     duration: "400",
+    category: "professional",
+    description: "Comprehensive GMAT preparation platform with interactive learning modules and practice tests."
   },
   {
     title: "Sunpower Referral",
@@ -147,6 +190,8 @@ export const portfolio = [
     tech: ["Reactjs", "Ant-Design", "Nodejs", "Graphql"],
     workUrl: "https://us.sunpower.com/",
     duration: "400",
+    category: "professional",
+    description: "Solar energy referral system with seamless user experience and tracking capabilities."
   },
   {
     title: "Best Payment Solutions",
@@ -154,13 +199,17 @@ export const portfolio = [
     tech: ["Reactjs", "Bootstrap", "Nodejs", "Graphql"],
     workUrl: "https://www.bestpayment.solutions/",
     duration: "400",
+    category: "professional",
+    description: "Secure payment gateway solution with multi-currency support and real-time transaction processing."
   },
   {
-    title: "Best Payment Solutions",
+    title: "Himcab India",
     imgUrl: himcab,
     tech: ["Nextjs", "Material-ui", "Rest-api"],
     workUrl: "https://himcabindia.com/",
     duration: "400",
+    category: "professional",
+    description: "Transportation company website with booking system and fleet management features."
   },
   {
     title: "Amazon UI Clone",
@@ -168,6 +217,8 @@ export const portfolio = [
     tech: ["Reactjs", "Css"],
     workUrl: "https://e-shop-5cc19.web.app/",
     duration: "400",
+    category: "personal",
+    description: "E-commerce UI clone featuring product listings, cart functionality, and responsive design."
   },
   {
     title: "Kanban UI Clone",
@@ -175,5 +226,7 @@ export const portfolio = [
     tech: ["Reactjs", "Css", "Ant-design", "Styled-components"],
     workUrl: "https://rohanvashisht003.github.io/Kanban-Project-Frontend/",
     duration: "400",
+    category: "personal",
+    description: "Project management tool with drag-and-drop functionality and task organization features."
   },
 ];

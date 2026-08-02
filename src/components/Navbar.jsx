@@ -28,7 +28,7 @@ const Navbar = () => {
       className={
         !showShadowNav
           ? "fixed w-full h-[80px] flex justify-between items-center px-4"
-          : "fixed w-full h-[80px] flex justify-between items-center px-4 bg-gradient-to-l from-[#21073C] to-[#3A1078] text-gray-300 z-20 shadow-2xl"
+          : "fixed w-full h-[80px] flex justify-between items-center px-4 bg-white/80 backdrop-blur-sm text-gray-800 z-20 shadow-2xl border-b border-white/20"
       }
     >
       <div>
@@ -50,6 +50,11 @@ const Navbar = () => {
         <li className="hover:text-[#ff9500] hover:translate-y-1 hover:duration-200 active:text-[#ff9500]">
           <Link to="about" smooth={true} duration={500}>
             About
+          </Link>
+        </li>
+        <li className="hover:text-[#ff9500] hover:translate-y-1 hover:duration-200 active:text-[#ff9500]">
+          <Link to="awards" smooth={true} duration={500}>
+            Awards
           </Link>
         </li>
         <li className="hover:text-[#ff9500] hover:translate-y-1 hover:duration-200 active:text-[#ff9500]">
@@ -75,7 +80,7 @@ const Navbar = () => {
       </ul>
 
       {/* social icons */}
-      <div className="hidden lg:flex fixed flex-col left-0 top-[35%]">
+      <div className="hidden lg:flex fixed flex-col left-0 top-[100%]">
         <ul className="flex flex-col gap-6">
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-200 rounded-e-2xl font-semibold">
             <a
