@@ -4,6 +4,8 @@ import bps from "../assets/bps2.jpeg";
 import himcab from "../assets/himcab.jpeg";
 import amazon from "../assets/amazon.png";
 import kanban from "../assets/kanban.jpeg";
+import weather from "../assets/weather.avif";
+import timesnow from "../assets/timesnow.jpg";
 
 // Array of langue objects
 export const languages = [
@@ -152,7 +154,7 @@ export const experience = [
       "Earned recognition on the organization's cheerboard for delivering exceptional results"
     ],
   },
-   {
+  {
     date: "April 2024 - Present",
     company: "Times Network (BCCL), Noida",
     position: "Software Developer",
@@ -169,8 +171,40 @@ export const experience = [
 
 export const portfolio = [
   {
+    title: "TimesNow Mobile Apps Backend Service",
+    imgUrl: timesnow,
+    // iframe: "https://www.timesnowhindi.com",
+    // workUrl: "https://www.timesnowhindi.com",
+    tech: ["Nodejs", "MongoDB", "Kafka", "Firebase"],
+    duration: "400",
+    category: "professional",
+    description: "Architected and led the migration of legacy mobile backend services to a centralized microservices ecosystem, delivering a reusable shared platform for multiple Times Network mobile applications(Times Now, Navbharat,Tn-Shorts)"
+  },
+  {
+    title: "Weather Backend Service",
+    imgUrl: weather,
+    // iframe: "https://www.timesnowhindi.com",
+    // workUrl: "https://www.timesnowhindi.com",
+    tech: ["Nodejs","Redis","Kafka","SQL"],
+    duration: "400",
+    category: "professional",
+    description: "Built a centralized Node.js data aggregation service to periodically fetch weather data from external APIs,which processed thousands of daily requests and reduced redundant API calls by 40%"
+  },
+  {
+    title: "TimesNow Navbharat",
+    imgUrl: sevenHundred,
+    iframe: "https://www.timesnowhindi.com",
+    workUrl: "https://www.timesnowhindi.com",
+    tech: ["Reactjs", "Redux", "Nodejs"],
+    duration: "400",
+    category: "professional",
+    description: "Full-Stack E-Commerce Platform: Architected and developed a feature-rich, full-stack e-commerce application built from scratch using React.js for a dynamic, high-performance shopping interface and Node.js for backend services. Features secure user authentication, real-time inventory management, payment gateway integration, and responsive layouts optimized for fast checkout flow."
+  },
+  {
     title: "TimesNow World",
     imgUrl: sevenHundred,
+    iframe: "https://www.timesnowworld.com",
+    workUrl: "https://www.timesnowworld.com",
     tech: ["Reactjs", "Redux", "Nodejs"],
     duration: "400",
     category: "professional",
@@ -179,6 +213,8 @@ export const portfolio = [
   {
     title: "GMAT Learning Platform",
     imgUrl: sevenHundred,
+    // iframe: "https://www.timesnowworld.com",
+    // workUrl: "https://www.timesnowworld.com",
     tech: ["Reactjs", "Ant-Design", "Redux", "RTK-Query"],
     duration: "400",
     category: "professional",
@@ -188,6 +224,7 @@ export const portfolio = [
     title: "Sunpower Referral",
     imgUrl: sunpower,
     tech: ["Reactjs", "Ant-Design", "Nodejs", "Graphql"],
+    iframe: "https://us.sunpower.com",
     workUrl: "https://us.sunpower.com/",
     duration: "400",
     category: "professional",
@@ -196,8 +233,9 @@ export const portfolio = [
   {
     title: "Best Payment Solutions",
     imgUrl: bps,
-    tech: ["Reactjs", "Bootstrap", "Nodejs", "Graphql"],
+    iframe: "https://www.bestpayment.solutions/",
     workUrl: "https://www.bestpayment.solutions/",
+    tech: ["Reactjs", "Bootstrap", "Nodejs", "Graphql"],
     duration: "400",
     category: "professional",
     description: "Secure payment gateway solution with multi-currency support and real-time transaction processing."
@@ -205,8 +243,9 @@ export const portfolio = [
   {
     title: "Himcab India",
     imgUrl: himcab,
-    tech: ["Nextjs", "Material-ui", "Rest-api"],
+    iframe: "https://himcabindia.com/",
     workUrl: "https://himcabindia.com/",
+    tech: ["Nextjs", "Material-ui", "Rest-api"],
     duration: "400",
     category: "professional",
     description: "Transportation company website with booking system and fleet management features."
@@ -214,8 +253,9 @@ export const portfolio = [
   {
     title: "Amazon UI Clone",
     imgUrl: amazon,
-    tech: ["Reactjs", "Css"],
+    iframe: "https://e-shop-5cc19.web.app/",
     workUrl: "https://e-shop-5cc19.web.app/",
+    tech: ["Reactjs"],
     duration: "400",
     category: "personal",
     description: "E-commerce UI clone featuring product listings, cart functionality, and responsive design."
@@ -223,8 +263,9 @@ export const portfolio = [
   {
     title: "Kanban UI Clone",
     imgUrl: kanban,
-    tech: ["Reactjs", "Css", "Ant-design", "Styled-components"],
+    iframe: "https://rohanvashisht003.github.io/Kanban-Project-Frontend/",
     workUrl: "https://rohanvashisht003.github.io/Kanban-Project-Frontend/",
+    tech: ["Reactjs", "Ant-design", "Styled-components"],
     duration: "400",
     category: "personal",
     description: "Project management tool with drag-and-drop functionality and task organization features."

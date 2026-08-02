@@ -67,7 +67,7 @@ const Portfolio = () => {
               Professional Projects
             </h2>
             <p className="text-gray-600 mb-6">
-              Enterprise-level applications built at Times Network
+             
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -81,12 +81,24 @@ const Portfolio = () => {
                     data-aos-duration={600 + (index * 100)}
                     data-aos-easing="linear"
                   >
-                    <div className="relative">
-                      <img
-                        src={work.imgUrl}
-                        alt={work.title}
-                        className="w-full h-40 object-cover"
-                      />
+                    <div className="relative h-40 overflow-hidden">
+                      {work.iframe ? (
+                        <div className="w-full h-full">
+                          <iframe
+                            src={work.iframe}
+                            title={work.title}
+                            className="w-full h-full border-0"
+                            style={{ transform: "scale(0.3)", transformOrigin: "top left", width: "333%", height: "333%" }}
+                            allowFullScreen
+                          />
+                        </div>
+                      ) : (
+                        <img
+                          src={work.imgUrl}
+                          alt={work.title}
+                          className="w-full h-40 object-cover"
+                        />
+                      )}
                       <a
                         href={work.workUrl}
                         target="_blank"
@@ -104,7 +116,7 @@ const Portfolio = () => {
                         {work.description || "A full-stack application built with modern technologies."}
                       </p>
                       <div className="flex flex-wrap gap-2">
-                        {work.tech.slice(0, 3).map((item) => (
+                        {work.tech.map((item) => (
                           <span
                             key={item}
                             className="text-xs font-medium text-blue-700 bg-blue-50 border border-blue-100 rounded-full px-2 py-1"
@@ -141,12 +153,24 @@ const Portfolio = () => {
                     data-aos-duration={600 + (index * 100)}
                     data-aos-easing="linear"
                   >
-                    <div className="relative">
-                      <img
-                        src={work.imgUrl}
-                        alt={work.title}
-                        className="w-full h-48 object-cover"
-                      />
+                    <div className="relative h-48 overflow-hidden">
+                      {work.iframe ? (
+                        <div className="w-full h-full">
+                          <iframe
+                            src={work.iframe}
+                            title={work.title}
+                            className="w-full h-full border-0"
+                            style={{ transform: "scale(0.3)", transformOrigin: "top left", width: "333%", height: "333%" }}
+                            allowFullScreen
+                          />
+                        </div>
+                      ) : (
+                        <img
+                          src={work.imgUrl}
+                          alt={work.title}
+                          className="w-full h-48 object-cover"
+                        />
+                      )}
                       <a
                         href={work.workUrl}
                         target="_blank"
